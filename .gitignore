@@ -1,0 +1,7 @@
+target/classes/**
+target/maven-archiver/**
+target/maven-status/**
+output/**
+.idea/**
+/.classpath
+/.project

@@ -1,4 +1,4 @@
-package com.learning.opensource.zk;
+package com.learning.opensource.zk.originCli;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -19,7 +19,8 @@ public class ZooKeeper_Constructor_Usage_Simple implements Watcher{
         System.out.println(zookeeper.getState());
         try{
             connectedSemaphore.await();
-        }catch (InterruptedException e){                                                                                                      }
+        }catch (InterruptedException e){
+        }
         System.out.println("Zookeeper session established.");
     }
 
