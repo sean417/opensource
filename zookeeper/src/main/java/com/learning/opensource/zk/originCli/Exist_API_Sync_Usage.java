@@ -51,7 +51,6 @@ public class Exist_API_Sync_Usage implements Watcher {
             if (Event.KeeperState.SyncConnected == watchedEvent.getState() && null == watchedEvent.getPath()) {
                 connectedSemaphore.countDown();
             } else if (watchedEvent.getType() == Event.EventType.NodeDataChanged) {
-
                 System.out.println("Node("+watchedEvent.getPath()+")DataChanged");
                 zookeeper.exists(watchedEvent.getPath(),true);
             }else if(Event.EventType.NodeCreated==watchedEvent.getType()){
