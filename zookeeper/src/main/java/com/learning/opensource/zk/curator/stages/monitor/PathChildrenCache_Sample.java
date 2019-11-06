@@ -1,4 +1,4 @@
-package com.learning.opensource.zk.curator.stages;
+package com.learning.opensource.zk.curator.stages.monitor;
 
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
